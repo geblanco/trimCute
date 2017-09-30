@@ -11,6 +11,7 @@ const ommitChars = [ 769 ]
 const args = Array.from(process.argv).slice(2)
 
 if( !args.length ){
+  console.log(`Usage ${process.argv[0]} ${process.argv[1]} <files> (glob expansion allowed)`)
   process.exit(1)
 }
 
